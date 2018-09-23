@@ -8,9 +8,11 @@
   </head>
   <body>
     <header>
-      <h2> Tic Tac Toe</h>
+      <h2> Tic Tac Toe</h2>
+      <div class='buttons'>
         <button onClick= 'playerX()'>Switch Player X</button>
         <button onClick= 'playerO()'>Switch Player O</button>
+      </div>
     </header>
     <div class="board" id="boxes">
       <div class = 'box' id='boxOne'  id ='allbox'>
@@ -32,6 +34,9 @@
       <div class = 'box' id='boxNine'>
       </div>
     </div>
+    <footer>
+      <button onClick= 'reload()'>REPLAY</button>
+    </footer>
     <script src="script.js" type="text/javascript" charset="utf-8" async defer></script>
   </body>
 </html>

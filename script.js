@@ -1,4 +1,3 @@
-
 // Box variable identifiers are below
 
 //Player 1 player 2   x  and o
@@ -54,7 +53,7 @@ boxEight.addEventListener('click', function(){
 })
 boxNine.addEventListener('click', function(){
   boxNine.textContent = 'X';
-  winning();
+  // winning();
 })
 
 // $(this).one('click', playerTwo());
@@ -91,16 +90,15 @@ boxEight.addEventListener('click', function(){
 })
 boxNine.addEventListener('click', function(){
   boxNine.textContent = 'O';
-  winning();
+  // winning();
 })
 
 // $(this).one('click', playerTwo())
 }
 
+//had to make buttons because I could not figure out how to rotate two players
+
 // playerTwo();
-
-
-
 function playerO() {
   switch(Turn){
     case true: playerOne();
@@ -118,10 +116,11 @@ function playerX() {
     case true: playerTwo();
     break;
   }
+
   winning()
 }
 
-
+//All my loop attempts kept failing so i had to do this
 
 function winning(){
   if(boxOne.textContent === 'X' && boxTwo.textContent === 'X' && boxThree.textContent === 'X'){
@@ -159,7 +158,9 @@ function winning(){
   }
 }
 
-
+function reload(){
+  window.location.reload()
+}
 
 
 
@@ -441,6 +442,3 @@ function winning(){
 
 
 // boxOne boxTwo boxThree
-
-
-
