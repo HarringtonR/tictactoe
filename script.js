@@ -1,8 +1,9 @@
+//I tried making things with loops but was spending hours not figuring them ....lots of hours... and gave up and this is all i could figure out.  You have to switch players and on the final switch it will check for a winner if there is a winning combo.  Also you can replace boxes. Don't know how to stop that.
+
+
+
+
 // Box variable identifiers are below
-
-//Player 1 player 2   x  and o
-
-
 let boxOne = document.getElementById('boxOne')
 let boxTwo = document.getElementById('boxTwo')
 let boxThree = document.getElementById('boxThree')
@@ -100,6 +101,12 @@ boxNine.addEventListener('click', function(){
 
 // playerTwo();
 function playerO() {
+    var buttonO = document.querySelector(".buttono");
+    var buttonX = document.querySelector(".buttonx");
+    buttonX.addEventListener("click", function(){
+    buttonX.style.backgroundColor = "blue";
+    buttonO.style.backgroundColor = 'white';
+   });
   switch(Turn){
     case true: playerOne();
     break;
@@ -109,7 +116,13 @@ function playerO() {
 
   winning()
 }
+
 function playerX() {
+      var buttonO = document.querySelector(".buttono");
+      buttonO.addEventListener("click", function(){
+      buttonO.style.backgroundColor = "red";
+      buttonX.style.backgroundColor = 'white';
+   });
   switch(Turn){
     case false: playerOne();
     break;
