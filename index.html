@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Tic Tac Toe</title>
-  <link rel="stylesheet" href="style.css">
-
-</head>
-<body>
-  <header>
-    <h1> Tic Tac Toe</h1>
-  </header>
-  <div class="board">
-    <div class = 'box'>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h2> Tic Tac Toe</h>
+        <button onClick= 'playerX()'>Switch Player X</button>
+        <button onClick= 'playerO()'>Switch Player O</button>
+    </header>
+    <div class="board" id="boxes">
+      <div class = 'box' id='boxOne'  id ='allbox'>
+      </div>
+      <div class = 'box' id='boxTwo'>
+      </div>
+      <div class = 'box' id='boxThree'>
+      </div>
+      <div class = 'box' id='boxFour'>
+      </div>
+      <div class = 'box' id='boxFive'>
+      </div>
+      <div class = 'box' id='boxSix'>
+      </div>
+      <div class = 'box' id='boxSeven'>
+      </div>
+      <div class = 'box' id='boxEight'>
+      </div>
+      <div class = 'box' id='boxNine'>
+      </div>
     </div>
-    <div class = 'box'>
-    </div>
-    <div class = 'box'>
-    </div>
-    <div class = 'box'>
-    </div>
-    <div class = 'box'>
-    </div>
-    <div class = 'box'>
-    </div>
-    <div class = 'box'>
-    </div>
-    <div class = 'box'>
-    </div>
-    <div class = 'box'>
-    </div>
-  </div>
-  <script src="script.js" type="text/javascript" charset="utf-8" async defer></script>
-</body>
+    <script src="script.js" type="text/javascript" charset="utf-8" async defer></script>
+  </body>
 </html>
+<!--  -->
